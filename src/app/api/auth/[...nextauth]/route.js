@@ -37,6 +37,7 @@ const handler = NextAuth({
       clientSecret: process.env.NEXT_PUBLIC_GOOGLE_CLIENT_SECRET,
     }),
   ],
+  secret: process.env.NEXT_PUBLIC_SECURE,
   callbacks: {},
   pages: {
     signIn: "/login", // Custom login page
